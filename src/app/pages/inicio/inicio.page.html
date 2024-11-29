@@ -1,0 +1,15 @@
+<ion-content>
+  <div class="container">
+    <h1>Verificador de Edad</h1>
+    <ion-item>
+      <ion-label position="floating">Nombre:</ion-label>
+      <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Edad:</ion-label>
+      <ion-input type="number" [(ngModel)]="edad"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="verificarEdad()">Verificar Edad</ion-button>
+    <div *ngIf="mensaje" class="mensaje">{{ mensaje }}</div>
+  </div>
+</ion-content>
